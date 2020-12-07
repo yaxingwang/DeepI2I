@@ -2,9 +2,6 @@
 - [Dependences](#dependences)
 - [Installation](#installtion)
 - [Instructions](#instructions)
-- [Results](#results)
-- [References](#references)
-- [Contact](#contact)
 # Dependences 
 - Python2.7, NumPy, SciPy, NVIDIA GPU
 - **Pytorch:** pytorch is more 1.0
@@ -14,14 +11,15 @@
 - Install pytorch
 # Instructions
 
-- `git clone git@github.com:yaxingwang/MineGAN.git` to get `MineGA`
+- `git clone https://github.com/yaxingwang/DeepI2I.git` to get `DeepI2I`, and `cd DeepI2I/DeepI2I_BigGAN`
+
 
 - Pretrained model: downloading the pretrained model from [Biggan](https://github.com/ajbrock/BigGAN-PyTorch). Note using `G_ema.pth` to replace `G.pth`, since we dones't use `ema`. The pretrained model is moved into `BigGAN_weights/` 
 
 
 - Preparing data: leveraging  `sh scripts/utils/prepare_data.py`, and put it into `data/your_data/data`. Please check [Biggan](https://github.com/ajbrock/BigGAN-PyTorch) to learn how to generate the data 
 
-I have already created a [example](https://drive.google.com/drive/folders/1Wvmz_SHlJekHjuC4UJCncxdcJsYlwcCb?usp=sharing). Downloading the three items and put them into `data/animals`. Also I upload the compressed NABirds and UECFOOD-256, which is only be used for our project.  
+I have already created a [example](https://drive.google.com/drive/folders/1Wvmz_SHlJekHjuC4UJCncxdcJsYlwcCb?usp=sharing). Downloading the three items and put them into `data/animals`. Also I upload the [compressed NABirds and UECFOOD-256](https://drive.google.com/drive/folders/1mftJ5RpTs2zPkf3c19suIGMXkswrgO5f?usp=sharing), which is only be used for our project.  
 
 - Traing: ```sh scripts/DeepI2I.sh```
 
@@ -32,10 +30,8 @@ The corresponding model and generated images are saved in   `result/animals` whe
 
 Note if you use new name (e.g., '--experiment DeepI2I_animalv2' in 'scripts/DeepI2I.sh'), you should also use it in  'scripts/DeepI2I_test.sh', and rename the  fold ( 'class_to_index/DeepI2I_animals') to the new one ( 'class_to_index/DeepI2I_animalv2') 
 
-Downloading  our [pre-trained model](https://drive.google.com/drive/folders/19pSSiNDmebtm17ymw3tYe5V5G9wI6RHR?usp=sharing) on animals, and put it into 'result/animals/weights/DeepI2I_animals/0'. Also the pre-trained model for [birds](https://drive.google.com/drive/folders/1gZpkFzLp9w8X1PsTiqPrPJWll5DgX2XP?usp=sharing) and [foods](updating)
+Downloading  our [pre-trained model](https://drive.google.com/drive/folders/19pSSiNDmebtm17ymw3tYe5V5G9wI6RHR?usp=sharing) on animals, and put it into 'result/animals/weights/DeepI2I_animals/0'. Also the pre-trained model for [birds](https://drive.google.com/drive/folders/1gZpkFzLp9w8X1PsTiqPrPJWll5DgX2XP?usp=sharing) and [foods](https://drive.google.com/drive/folders/1RgdpYmOoWnX0gqQzETgcpZQTPJFAw5Pp?usp=sharing)
 
-
-```
 
 If you use the provided data and code, please cite the following papers:
  

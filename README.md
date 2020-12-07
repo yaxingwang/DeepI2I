@@ -20,7 +20,7 @@ Image-to-image translation has recently achieved remarkable results. But despite
 
 # References 
 - \[1\] [BigGAN](https://arxiv.org/abs/1809.11096) 
-- \[2\] [StyleGAB](https://arxiv.org/pdf/1812.04948.pdf) 
+- \[2\] [StyleGAN](https://arxiv.org/pdf/1812.04948.pdf) 
 
 # Contact
 If you run into any problems with this code, please submit a bug report on the Github site of the project. For another inquries pleace contact with me: yaxing@cvc.uab.es

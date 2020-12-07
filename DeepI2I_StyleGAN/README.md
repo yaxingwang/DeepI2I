@@ -26,9 +26,11 @@ This will convert images to jpeg and pre-resizes it (For example, 8/16/32/64/128
 ```
 python train.py  data/cat --path_y data/dog --init_size 256 --max_size 256 --mixing  --ckpt checkpoint/StyleGAN_pretrained/stylegan-256px-new.model  
 
-Here the path (data/cat) contains both data.mdb and lock.mdb.  
 
 ```
+
+Here the path (data/cat) contains both data.mdb and lock.mdb.  
+
 
 If you use the provided data and code, please cite the following papers:
  
