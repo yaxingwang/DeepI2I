@@ -36,11 +36,10 @@ If you use the provided data and code, please cite the following papers:
  
 ```
 
-@article{yu2020deepi2i,
+@article{wang2020deepi2i,
   title={DeepI2I: Enabling Deep Hierarchical Image-to-Image Translation by Transferring from GANs},
-  author={Wang, Yaxing, Yu, Lu and van de Weijer, Joost},
-  journal={Advances in Neural Information Processing Systems},
-  volume={33},
+  author={Wang, Yaxing and Yu, Lu and van de Weijer, Joost},
+  journal={arXiv preprint arXiv:2011.05867},
   year={2020}
 }
 
