@@ -19,7 +19,7 @@
 
 - Preparing data: leveraging  `sh scripts/utils/prepare_data.py`, and put it into `data/your_data/data`. Please check [Biggan](https://github.com/ajbrock/BigGAN-PyTorch) to learn how to generate the data 
 
-I have already created a [example](https://drive.google.com/drive/folders/1Wvmz_SHlJekHjuC4UJCncxdcJsYlwcCb?usp=sharing). Downloading the three items and put them into `data/animals`. Also I upload the [compressed NABirds and UECFOOD-256](https://drive.google.com/drive/folders/1mftJ5RpTs2zPkf3c19suIGMXkswrgO5f?usp=sharing), which is only be used for our project.  
+I have already created an [example](https://drive.google.com/drive/folders/1Wvmz_SHlJekHjuC4UJCncxdcJsYlwcCb?usp=sharing). Downloading the three items and put them into `data/animals`. Also I upload the [compressed NABirds and UECFOOD-256](https://drive.google.com/drive/folders/1mftJ5RpTs2zPkf3c19suIGMXkswrgO5f?usp=sharing), which is only be used for our project.  
 
 Note when you processe data, try to save the label of each categroy, since it is easy for you to further generate images by leveraging label, and compare to the corresponding GT. Here I save them in the folder `class_to_index/*`, which is used in test time.  
 
