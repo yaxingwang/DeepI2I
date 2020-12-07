@@ -21,6 +21,8 @@
 
 I have already created a [example](https://drive.google.com/drive/folders/1Wvmz_SHlJekHjuC4UJCncxdcJsYlwcCb?usp=sharing). Downloading the three items and put them into `data/animals`. Also I upload the [compressed NABirds and UECFOOD-256](https://drive.google.com/drive/folders/1mftJ5RpTs2zPkf3c19suIGMXkswrgO5f?usp=sharing), which is only be used for our project.  
 
+Note when you processe data, try to save the label of each categroy, since it is easy for you to further generate images by leveraging label, and compare to the corresponding GT. Here I save them in the folder `class_to_index/*`, which is used in test time.  
+
 - Traing: ```sh scripts/DeepI2I.sh```
 
 The corresponding model and generated images are saved in   `result/animals` where four items are automatically generated: 'logs', 'samples', 'test' and 'weights'.  
