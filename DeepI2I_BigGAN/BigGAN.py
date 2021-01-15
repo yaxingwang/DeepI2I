@@ -772,8 +772,8 @@ class G_D(nn.Module):
           D_input = torch.cat([G_z, t_x], 0) 
           D_class = torch.cat([gy, t_y], 0) 
           # Get Discriminator output
-          D_out, L_feat = self.D(D_input, D_class, output_feat = train_E1)
-          D_out = D_out[0]# only the output of geneated image 
+          D_out_both, L_feat = self.D(D_input, D_class, output_feat = train_E1)
+          D_out,_ = torch.split(D_out_both, [G_z.shape[0], t_x.shape[0]])
       else:
           D_input = torch.cat([G_z, x], 0) if x is not None else G_z
           D_class = torch.cat([gy, dy], 0) if dy is not None else gy
